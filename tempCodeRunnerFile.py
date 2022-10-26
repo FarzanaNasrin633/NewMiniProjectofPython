@@ -1,1 +1,1 @@
-random
+player_want_to_play
