@@ -1,17 +1,25 @@
 from curses import is_term_resized
 from curses.ascii import isdigit
+from itertools import count
 import random
 from xml.dom import WRONG_DOCUMENT_ERR, WrongDocumentErr
  
 input_number = input("Type a number: ")
 
-guess_number = False
+input_number = int(input_number)
 
- while guess_number:
-    print("Guess number is not correct")
-    input_number = input("Do you want to try this again? ")
-    guess_number = input_number == "yes"
-    continue
+if input_number.isdigit():
+    input_number = int(input_number)
+    
+    if input_number <= 0:
+    print('Please try this again')
+    count++
+else:
+    print('Do you want to try this again? ')
+    quit()
+
+random_number = random_number(0, random_number)
+print(random_number)
 
 
 if input_number.isdigit():
