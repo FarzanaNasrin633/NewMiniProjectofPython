@@ -36,7 +36,7 @@ while player_want_to_play:
     count = count + 1
 
     if count <= 3:
-        if input_number = 
+        if input_number.isdigit():
 
             input_number = int(input_number)
 
